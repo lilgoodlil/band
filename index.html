@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="ساعت , عینک , خرید اینترنتی , خرید آنلاین">
+    <meta name="author" content="lilgoodlil">
+    <title>خرید اینترنتی ساعت مچی | مردانه زنانه</title>
+    <link rel="icon" type="image/x-icon" href="./images/smartwatch.svg">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="header-navbar">
+          <img src="./images/smartwatch.svg" alt="بند" width="50" height="40" class="header-logo">
+          <ul class="header-menu" style="flex-grow: 2;">
+            <li><a href="" class="active">صفحه اصلی</a></li>
+            <li><a href="" class="not-active"> ساعت مچی</a></li>
+            <li><a href="" class="not-active">عینک </a></li>
+            <li><a href="" class="not-active">ساعت مردانه </a></li>
+            <li><a href="" class="not-active">ساعت زنانه </a></li>
+            <li><a href="" style="color: red;" class="offer">پیشنهاد ویژه</a></li>
+            <li><a href="" style="color: blue;">ورود/ثبت نام</a></li>
+            <li><a href="">
+              <img src="./images/handbag.svg" alt="سبد خرید" width="30">
+            </a></li>
+          </ul>
+          <a class="header-dropdown" href="" onclick="dropMenu(event)">
+            <img src="./images/list.svg" alt="منو" width="40" class="header-dropdown-svg">
+          </a>
+
+        </nav>
+        <nav class="header-details">
+          <div class="header-detail">
+            <span>ارسال رایگان به کل ایران</span><pre> </pre>
+            <img src="./images/bicycle.svg" alt="" width="30">
+          </div>
+          <div class="header-detail">
+            <span>تضمین دوساله</span><pre> </pre>
+            <img src="./images/emoji-heart-eyes.svg" alt="" width="20">
+          </div>
+          <div class="header-detail">
+            <span>بیش از ده سال قدمت</span><pre> </pre>
+            <img src="./images/graph-up-arrow.svg" alt="" width="20">
+          </div>
+          <div class="header-detail">
+            <span>بیش از ده هزار ثبت سفارش</span><pre> </pre>
+            <img src="./images/handbag.svg" alt="" width="20">
+          </div>
+        </nav>
+        <div class="header-slider">
+          <img src="./images/header1.webp" alt="" class="header-slider__img">
+
+          <a class="nextSlide-btn">
+            <img src="./images/caret-right.svg" height="30" alt="بعدی" onclick="nextSlide(true)">
+          </a>
+          <a class="prevSlide-btn">
+            <img src="./images/caret-left.svg" height="30" alt="قبلی" onclick="nextSlide(false)">
+          </a>
+
+        </div>
+      </header>
+      <section class="store">
+        <button class="asideController" onclick="showAside()">فیلتر و جستجو</button>
+        <aside class="aside">
+          <div class="aside-container">
+            <h3>جستجوی سریع</h3>
+
+            <input type="text" placeholder="نام ساعت، عینک و ..." name="search" id="searchInput">
+            <button type="submit" class="search-btn">
+              <img src="./images/search.svg" alt="جستجو">
+            </button>
+
+            
+            <form action="" class="filterBar">
+            <ul class="filter-list">
+              <li>
+                <span>دسته بندی</span>
+                <ul>
+                  <input type="radio" id="vehicle1" name="category" value="allW" checked>
+                  <label for="vehicle1"> همه ساعت ها</label>
+                  <br>
+                  <input type="radio" id="vehicle2" name="category" value="menW">
+                  <label for="vehicle2"> ساعت مردانه</label>
+                  <br>
+                  <input type="radio" id="vehicle3" name="category" value="womenW">
+                  <label for="vehicle3"> ساعت زنانه</label>
+                  <br>
+                  <input type="radio" id="vehicle3" name="category" disabled value="glass">
+                  <label for="vehicle3"> عینک</label>
+                  <br>
+                </ul>
+              </li>
+              <li>
+                <span>محدوده قیمت</span>
+                <div class="priceSlider">
+                  <span>از: </span>
+                  <input type="number" class="input-min" value="500000"><br>
+                  <span>تا:</span>
+                  <input type="number" class="input-max" value="5000000">
+                  <div class="slider">
+                    <div class="progress"></div>
+                  </div>
+                  <div class="range-input">
+                    <input type="range" class="range-min" min="500000" max="5000000" value="500000" step="100000">
+                    <input type="range" class="range-max" min="500000" max="5000000" value="5000000" step="100000">
+                  </div>
+                </div>
+
+              </li>
+              <li>
+                <span>امکانات</span>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="utility1">
+                    <label for="utility1">تایمر صدادار</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="utility2">
+                    <label for="utility2"> زمان سنج</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="utility3">
+                    <label for="utility3">نمایش تاریخ</label>
+                  </li> 
+                  <li>
+                    <input type="checkbox" id="utility4">
+                    <label for="utility4">نمایش شباته روز</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="utility5">
+                    <label for="utility5">نمایش روزهای هفته</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="utility6">
+                    <label for="utility6">اتصال به گوشی از طریق بلوتوث</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="utility7">
+                    <label for="utility7">اتصال به گوشی از طریق بلوتوث</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="utility8">
+                    <label for="utility8">نور پس زمینه</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="utility9">
+                    <label for="utility9">ساعت جهانی</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="utility10" disabled>
+                    <label for="utility10">هوشمند</label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>کالکشن</span>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="collection1" name="collection">
+                    <label for="collection1">Exclusive</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="collection2" name="collection">
+                    <label for="collection2">Classic</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="collection3" name="collection">
+                    <label for="collection3">Romantic</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="collection4" name="collection">
+                    <label for="collection4">Official</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="collection5" name="collection">
+                    <label for="collection5">Ordinary</label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>رنگ بدنه</span>
+                <ul>
+                  <li>
+                    <input type="radio" id="colorBadane1" name="colorBadane">
+                    <label for="colorBadane1">سیاه</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="colorBadane2" name="colorBadane">
+                    <label for="colorBadane2">قهوه ای</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="colorBadane3" name="colorBadane">
+                    <label for="colorBadane3">طلایی</label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>رنگ بند</span>
+                <ul>
+                  <li>
+                    <input type="radio" id="colorBand1" name="colorBand">
+                    <label for="colorBand1">سیاه</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="colorBand2" name="colorBand">
+                    <label for="colorBand2">سفید</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="colorBand3" name="colorBand">
+                    <label for="colorBand3">طلایی</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="colorBand4" name="colorBand">
+                    <label for="colorBand4">سبز</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="colorBand5" name="colorBand">
+                    <label for="colorBand5">قهوه ای</label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>طرح صفحه</span>
+                  <ul>
+                    <li>
+                      <input type="radio" id="screenMethod1" name="screenMethod" checked>
+                      <label for="screenMethod1">آنالوگ</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="screenMethod2" name="screenMethod">
+                      <label for="screenMethod2">دیجیتال</label>
+                    </li>
+                  </ul>
+              </li>
+              <li>
+                <span>جنس بند</span>
+                <ul>
+                  <li>
+                    <input type="radio" id="jensBand1" name="jensBand">
+                    <label for="jensBand1">چرمی</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="jensBand2" name="jensBand">
+                    <label for="jensBand2">استیل</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="jensBand3" name="jensBand" disabled>
+                    <label for="jensBand3">نقره</label>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            </form>
+          </div>
+        </aside>
+        <main class="main">
+          <section class="main-header">
+            <div class="page-path">
+              <p> <a href="">صفحه اول</a> | <a href="">همه ساعت ها</a></p>
+            </div>
+            <div class="sort-metod">
+              <ul class="sort-method-list">
+                <li><span>مرتب سازی بر اساس:</span></li> 
+                <li><a href="">پربازدیدترین</a></li>
+                <li><a href="">پرفروش ترین</a></li>
+                <li><a href="" style="color: brown; font-weight: bold;">جدیدترین</a></li>
+                <li><a href="">ارزانترین</a></li>
+                <li><a href="">گرانترین</a></li>
+                <li><a href="">بیشترین تخفیف</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="cataloug">
+            <div class="cart">
+              <div class="cart-img">
+                <a href="">
+                  <img src="./images/7.jpg" alt="" width="250">
+                </a>
+              </div>
+              <div class="cart-body">
+                <h3>ساعت مچی مردانه</h3>
+                <span>مدل دیزل DZ604-A</span>
+                <p>1.450.000 تومان</p>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="cart-img">
+                <a href="">
+                  <img src="./images/2.jpg" alt="" width="250">
+                </a>
+              </div>
+              <div class="cart-body">
+                <h3>ساعت مچی مردانه</h3>
+                <span>مدل دیزل DZ604-A</span>
+                <p>1.450.000 تومان</p>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="cart-img">
+                <a href="">
+                  <img src="./images/3.jpg" alt="" width="250">
+                </a>
+              </div>
+              <div class="cart-body">
+                <h3>ساعت مچی مردانه</h3>
+                <span>مدل دیزل DZ604-A</span>
+                <p>1.450.000 تومان</p>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="cart-img">
+                <a href="">
+                  <img src="./images/8.jpg" alt="" width="250">
+                </a>
+              </div>
+              <div class="cart-body">
+                <h3>ساعت مچی مردانه</h3>
+                <span>مدل دیزل DZ604-A</span>
+                <p>1.450.000 تومان</p>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="cart-img">
+                <a href="">
+                  <img src="./images/5.jpg" alt="" width="250">
+                </a>
+              </div>
+              <div class="cart-body">
+                <h3>ساعت مچی مردانه</h3>
+                <span>مدل دیزل DZ604-A</span>
+                <p>1.450.000 تومان</p>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="cart-img">
+                <a href="">
+                  <img src="./images/6.jpg" alt="" width="250">
+                </a>
+              </div>
+              <div class="cart-body">
+                <h3>ساعت مچی مردانه</h3>
+                <span>مدل دیزل DZ604-A</span>
+                <p>1.450.000 تومان</p>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="cart-img">
+                <a href="">
+                  <img src="./images/7.jpg" alt="" width="250">
+                </a>
+              </div>
+              <div class="cart-body">
+                <h3>ساعت مچی مردانه</h3>
+                <span>مدل دیزل DZ604-A</span>
+                <p>1.450.000 تومان</p>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="cart-img">
+                <a href="">
+                  <img src="./images/8.jpg" alt="" width="250">
+                </a>
+              </div>
+              <div class="cart-body">
+                <h3>ساعت مچی مردانه</h3>
+                <span>مدل دیزل DZ604-A</span>
+                <p>1.450.000 تومان</p>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="cart-img">
+                <a href="">
+                  <img src="./images/9.jpg" alt="" width="250">
+                </a>
+              </div>
+              <div class="cart-body">
+                <h3>ساعت مچی مردانه</h3>
+                <span>مدل دیزل DZ604-A</span>
+                <p>1.450.000 تومان</p>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="cart-img">
+                <a href="">
+                  <img src="./images/10.jpg" alt="" width="250">
+                </a>
+              </div>
+              <div class="cart-body">
+                <h3>ساعت مچی مردانه</h3>
+                <span>مدل دیزل DZ604-A</span>
+                <p>1.450.000 تومان</p>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="cart-img">
+                <a href="">
+                  <img src="./images/11.jpg" alt="" width="250">
+                </a>
+              </div>
+              <div class="cart-body">
+                <h3>ساعت مچی مردانه</h3>
+                <span>مدل دیزل DZ604-A</span>
+                <p>1.450.000 تومان</p>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="cart-img">
+                <a href="">
+                  <img src="./images/12.jpg" alt="" width="250">
+                </a>
+              </div>
+              <div class="cart-body">
+                <h3>ساعت مچی مردانه</h3>
+                <span>مدل دیزل DZ604-A</span>
+                <p>1.450.000 تومان</p>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="cart-img">
+                <a href="">
+                  <img src="./images/7.jpg" alt="" width="250">
+                </a>
+              </div>
+              <div class="cart-body">
+                <h3>ساعت مچی مردانه</h3>
+                <span>مدل دیزل DZ604-A</span>
+                <p>1.450.000 تومان</p>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="cart-img">
+                <a href="">
+                  <img src="./images/2.jpg" alt="" width="250">
+                </a>
+              </div>
+              <div class="cart-body">
+                <h3>ساعت مچی مردانه</h3>
+                <span>مدل دیزل DZ604-A</span>
+                <p>1.450.000 تومان</p>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="cart-img">
+                <a href="">
+                  <img src="./images/3.jpg" alt="" width="250">
+                </a>
+              </div>
+              <div class="cart-body">
+                <h3>ساعت مچی مردانه</h3>
+                <span>مدل دیزل DZ604-A</span>
+                <p>1.450.000 تومان</p>
+              </div>
+            </div>
+          </section>
+        </main>
+        <section class="pagination">
+          <ul>
+            <li><button id="activePage">1</button></li>
+            <li><button>2</button></li>
+            <li><button>3</button></li>
+            <li><button>4</button></li>
+            <li><button>5</button></li>
+          </ul>
+        </section>
+      </section>
+      <article class="main-article">
+        <div class="article-body">
+          <h1>بند،<sub> تولید کننده انواع<sub> ساعت مچی و عینک</sub></sub></h1>
+          <p>یک ساعت خوب و برند می تواند به
+            میزان قابل توجهی ظاهر شما را شیک و منحصربه‌فرد نشان دهد؛ البته
+            نباید فراموش کرد که ساعت انتخابی شما باید با لباس‌هایی که می‌پوشید نیز مطابقت داشته
+            باشد. بند ساعت، اندازه و ابعاد صفحه نمایش و ... همه از مهم‌ترین مواردی هستند که
+            آقایان هنگام خرید ساعت مچی مردانه به آن توجه ویژه‌ای دارند، مخصوصا آن دسته
+            از آقایانی که ساعت های مچی خود را براساس لباس‌هایی که می‌پوشند انتخاب می‌کند
+            . برای خرید ساعت مچی اصل مردانه حتما به نمایندگی‌های رسمی فروش ساعت مردانه
+            مراجعه کنید؛ حتی می توانید به سراغ سایت‌های معروف و معتبر 
+            فروش آنلاین ساعت بروید که یکی از بهترین آن‌ها فروشگاه 
+            ساعت بند است که بهترین ساعت های مچی مردانه ارزان
+            قیمت 
+            و باکیفیت را به شما مشتریان عزیز ارائه می‌دهد.
+          </p>
+        </div>
+
+
+
+        <div class="questionsBox">
+          <ul class="questionsList">
+            <li class="question">
+              <a href="">قیمت ساعت های مردانه از چقدر شروع می شود؟</a>
+            </li>
+            <li class="question">
+              <a href="">هزینه ارسال ساعت به تهران و شهرستان ها چقدر است و چند وقته به دست ما میرسه؟</a>
+            </li>
+            <li class="question">
+              <a href="">بهترین برند ساعت های مردانه رو میشه معرفی کنید ؟</a>
+            </li>
+            <li class="question">
+              <a href="">بهترین برند ساعت های زنانه رو میشه معرفی کنید ؟</a>
+            </li>
+            <li class="question">
+              <a href="">قیمت ساعت های زنانه از چقدر شروع می شود؟</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <footer>
+        <div>
+          <h2>درباره فروشگاه بند</h2>
+          <p>
+            فروشگاه ساعت بند فعالیت خود را درسال 1393 به طور تخصصی در زمینه ساعت شروع کرد <a href="">[ادامه]</a>
+          </p>
+          <img src="./images/smartwatch.svg" alt="" class="footer-band-logo">
+        </div>
+        <div>
+          <h2>اطلاعات تماس</h2>
+          <p>تلفن: 09123456789
+            <br>ایمیل: band@gmail.com
+            <address>آدرس: تهران خ بند کوچه بند</address>
+          </p>
+        </div>
+        <div class="footer-logo">
+          <img src="./images/footer.png" alt="">
+        </div>
+        <div class="footer-end">
+          <hr>
+          <p>استفاده از مطالب فروشگاه ساعت بند با ذکر منبع بلامانع می باشد.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
